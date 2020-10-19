@@ -20,7 +20,7 @@ The co-ordinates involved in this system would be the global, vehicle, camera an
 
 The data obtained from each sesor is based on its own co-ordinate system, so the first task is for merging mutliple sensor data is transformation of the co-ordinate system.
 
-All the co-ordinate systems are uniformly transformed into a global reference frame. The Euler angles between the vehicle/camera and the global co-ordinate system are measured from VSLAM (rotation matrix $R;). The Eular angles of the IMU can be calculated from the sensor.
+All the co-ordinate systems are uniformly transformed into a global reference frame. The Euler angles between the vehicle/camera and the global co-ordinate system are measured from VSLAM (rotation matrix). The Eular angles of the IMU can be calculated from the sensor.
 </p>
 
 ## IMU Pose Estimation
