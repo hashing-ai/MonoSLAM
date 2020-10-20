@@ -1,7 +1,7 @@
 # SLAM
 
 ## What is SLAM ?
-- stands for "simultaneous localizationa and mapping""
+- stands for "simultaneous localization and mapping""
 
 Currently, there are many ways to do SLAM with monocular camera.
 But, let's start from  [MonoSLAM : A Real-Time Single Camera SLAM](https://www.doc.ic.ac.uk/~ajd/Publications/davison_etal_pami2007.pdf)
@@ -10,7 +10,7 @@ But, let's start from  [MonoSLAM : A Real-Time Single Camera SLAM](https://www.d
 ## SLAM Based on IMU and Monocular
 
 <p align='justify'>
-We have to integrate the data coming from IMU and monocular camera. Let's first take a look at some coversion relations among various co-ordinate systems and then we will dive into obtaining the pose through IMU data and standalone monocular SLAM. And finally, we will fuse these data to get the final pose of the vehicle.
+We have to integrate the data coming from IMU and monocular camera. Let's first take a look at some conversion relations among various co-ordinate systems and then we will dive into obtaining the pose through IMU data and standalone monocular SLAM. And finally, we will fuse these data to get the final pose of the vehicle.
 </p>
 
 ## Co-ordinate Coversion
@@ -30,12 +30,12 @@ IMU orientation estimation is based on the angular velocity, which is measured b
 
 :: steps ::
 - Calculate static quaternion by the factored quaternion algorithm
-- Estiamte the dynamic quaternion by the differential relation between the angular velocity and the quaternion
+- Estimate the dynamic quaternion by the differential relation between the angular velocity and the quaternion
 - Merge the static quaternion with dynamic quaternion together by Kalman Filter
 - Achieve pose estimation
 
 <p align='justify'> 
-In general, there must be filter processing due to the gyro drift and measuremnt noise. 
+In general, there must be filter processing due to the gyro drift and measurement noise. 
 The quaternion is set as state vector `x = q`. 
 
 
