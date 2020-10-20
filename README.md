@@ -34,6 +34,8 @@ IMU orientation estimation is based on the angular velocity, which is measured b
 - Merge the static quaternion with dynamic quaternion together by Kalman Filter
 - Achieve pose estimation
 
-
+<p align='justify'> 
+In general, there must be filter processing due to the gyro drift and measuremnt noise. 
+The quaternion is set as state vector `x = q`. 
 
 
